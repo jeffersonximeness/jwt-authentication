@@ -3,7 +3,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Login  from './components/Login'
-import { Route, Switch } from 'react-router-dom';
+import Register from './components/Register'
+
+import { Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <div>
         <Switch>
           <Route exact path='/login' component={Login} />
+          <Route exact path='/register' component={Register} />
         </Switch>
       </div>
     </div>

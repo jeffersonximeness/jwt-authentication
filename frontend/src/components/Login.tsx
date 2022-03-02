@@ -59,7 +59,7 @@ const Login: React.FC<Props> = ({ history }) => {
                     onSubmit={handleLogin}
                 >
                     <Form>
-                        <div className="form-group">
+                        <div className='form-group'>
                             <label htmlFor='username'>Username</label>
                             <Field name='username' type='text' className='form-control' />
                             <ErrorMessage 
@@ -68,7 +68,7 @@ const Login: React.FC<Props> = ({ history }) => {
                                 className='alert alert-danger'
                             />
                         </div>
-                        <div className="form-group">
+                        <div className='form-group'>
                             <label htmlFor='password'>Password</label>
                             <Field name='password' type='password' className='form-control' />
                             <ErrorMessage
@@ -86,8 +86,8 @@ const Login: React.FC<Props> = ({ history }) => {
                             </button>
                         </div>
                         {message && (
-                            <div className="form-group">
-                                <div className="alert alert-danger" role='alert'>
+                            <div className='form-group'>
+                                <div className='alert alert-danger' role='alert'>
                                     {message}
                                 </div>
                             </div>
