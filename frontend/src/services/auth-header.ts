@@ -1,4 +1,6 @@
-export default function authHeader() {
+import { AxiosRequestHeaders } from 'axios'
+
+export default function authHeader(): AxiosRequestHeaders {
     const userStr = localStorage.getItem('user')
     let user = null
 
@@ -7,7 +9,7 @@ export default function authHeader() {
     }
 
     if (user && user.accessToken) {
-        return { 'x-access-tokne': user.accessToken }
+        return { 'x-access-token': user.accessToken }
     } else {
         return {}
     }
