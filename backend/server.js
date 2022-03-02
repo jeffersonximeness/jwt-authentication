@@ -18,8 +18,7 @@ app.get('/', (req, res) => {
 
 const Role = db.role
 
-db.sequelize.sync({ force: true }).then(() => {
-    console.log('Drop and Resync DB')
+db.sequelize.sync().then(() => {
     initial()
 })
 
@@ -37,6 +36,9 @@ function initial() {
         name: 'admin'
     })
 }
+
+require('./routes/auth.routes')(app)
+require('./routes/user.routes')(app)
 
 
 const PORT = process.env.PORT || 8080
