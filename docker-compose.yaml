@@ -36,3 +36,4 @@ services:
       - 8081:8081
     depends_on:
       - node_api
+    restart: on-failure
