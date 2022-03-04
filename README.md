@@ -17,9 +17,9 @@
 <div style="margin-top: 30px; margin-bottom: 20px">
     <p>
         De forma simplificada, a imagem acima mostra como é feito o fluxo de de autenticação via JWT.<br>
-        1. É enviada uma requisição com usuário e senha, após a verificação do back-end, o token é retornado ao front-end e salvo no Local Storage.<br>
+        1. É enviada uma requisição com usuário e senha para login, após a verificação do back-end, o token é retornado ao front-end e salvo no Local Storage.<br>
         2. Após o token ser salvo, deve ser colocado no header para as futuras requisições para autenticar o usuário. A partir dai em toda requisição
-            é verificado o token, e se tudo estiver certo, os dados serão devolvidos ao front-end.
+            é verificado o token pelo middleware, e se tudo estiver certo, os dados serão devolvidos ao front-end.
     </p>
 </div>
 
