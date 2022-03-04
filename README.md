@@ -92,7 +92,7 @@ $ docker-compose up -d
 <div style="margin-left: 30px">
     <p>
         O frontend do projeto foi construido com Typescript utilizando React com o framework Bootstrap para estilização, as requisições para a API foram feitas utilizando o Axios.<br>
-        O backend/API foi construido com node e o framework express. Para conexão com o banco de dados e consultas foi utilizado o ORM sequelize.
+        O backend/API foi construido com Node e o framework express. Para conexão com o banco de dados e consultas foi utilizado o ORM sequelize.
         Ao registrar um usuário, automaticamente é criado uma 'ROLE_USER' que é o tipo comum de usuário, além desse tipo tem: 'ROLE_MODERATOR' e 'ROLE_ADMIN'.<br>
         Cada tipo de usuário pode acessar conteúdos referentes a sua ROLE. A lógica de acesso aos conteúdos é feita pelo frontend.<br>
         A infraestrutura da aplicação é feita com Docker, são criados 3 conteiners, um para cada parte da aplicação (banco de dados, backend e frontend).
