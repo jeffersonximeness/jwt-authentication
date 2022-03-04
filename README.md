@@ -100,4 +100,4 @@ $ docker-compose up -d
     </p>
 </div>
 <br>
-<p>A aplicação irá abrir localmente em <strong>http://localhost:3000</strong></p>
+<p>A aplicação irá abrir localmente em <strong>http://localhost:8081</strong></p>
