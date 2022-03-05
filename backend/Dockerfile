@@ -2,7 +2,7 @@ FROM node:alpine
 
 WORKDIR /app
 
-COPY [".env", "yarn.lock", "package.json", "package*.json", "./"]
+COPY [".env", "package.json", "package*.json", "./"]
 
 RUN npm install
 
